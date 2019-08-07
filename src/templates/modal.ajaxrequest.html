@@ -1,16 +1,26 @@
 <form id="formAjaxRequest">
-<div class="modal-body">
-	<fieldset>
-		<label>URL</label><br>
-		<input class="form-control" type="text" id="ajaxurl" required><br>
-		<label>{{i18n.data}}</label><br>
-		<textarea class="form-control" id="ajaxdata"></textarea><br>
-		<label>{{i18n.method}}</label><br>
-		<input type="radio" name="arMethod" value="GET">GET</input><input type="radio" name="arMethod" value="POST" checked="checked">POST</input><br>
-		<button type="button" class="btn btn-success" id="buttonRequest">{{i18n.request}}</button>
-		<button type="button" class="btn btn-default" id="buttonClose">{{i18n.cancel}}</button><br>
-		<label>{{i18n.response}}</label><br>
-		<textarea class="form-control" id="ajaxresponse"></textarea>
-	</fieldset>
+	<div class="modal-body">
+		<fieldset>
+			<label>URL</label>
+			<br>
+			<input class="form-control" type="text" id="ajaxurl" required>
+			<br>
+			<label>{{i18n.data}}</label>
+			<br>
+			<textarea class="form-control" id="ajaxdata"></textarea>
+			<br>
+			<label>{{i18n.method}}</label>
+			<br>
+			<input type="radio" name="arMethod" value="GET">GET
+			<input type="radio" name="arMethod" value="POST" checked="checked">POST
+			<br>
+			<button type="button" class="btn btn-success" id="buttonRequest">{{i18n.request}}</button>
+			<button type="button" class="btn btn-secondary"
+					id="buttonClose">{{i18n.cancel}}</button>
+			<br>
+			<label>{{i18n.response}}</label>
+			<br>
+			<textarea class="form-control" id="ajaxresponse"></textarea>
+		</fieldset>
+	</div>
 </form>
-</div>

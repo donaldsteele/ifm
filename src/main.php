@@ -18,9 +18,9 @@ class IFM {
 		// general config
 		"auth" => 0,
 		"auth_source" => 'inline;admin:$2y$10$0Bnm5L4wKFHRxJgNq.oZv.v7yXhkJZQvinJYR2p6X1zPvzyDRUVRC',
-		"root_dir" => "",
-		"tmp_dir" => "",
-		"defaulttimezone" => "Europe/Berlin",
+		"root_dir" => "/",
+		"tmp_dir" => "/tmp",
+		"defaulttimezone" => "America/New_York",
 		"forbiddenChars" => array(),
 		"language" => "@@@vars:defaultlanguage@@@",
 		"selfoverwrite" => 0,
@@ -46,8 +46,8 @@ class IFM {
 		"showfilesize" => 1,
 		"showowner" => 1,
 		"showgroup" => 1,
-		"showpermissions" => 2,
-		"showhtdocs" => 0,
+		"showpermissions" => 1,
+		"showhtdocs" => 1,
 		"showhiddenfiles" => 1,
 		"showpath" => 0,
 		"contextmenu" => 1,
@@ -211,6 +211,7 @@ f00bar;
 		echo <<<'f00bar'
 <script>
 			@@@file:src/includes/jquery.min.js@@@
+			@@@file:src/includes/popper.min.js@@@
 			@@@file:src/includes/bootstrap.min.js@@@
 			@@@file:src/includes/bootstrap-notify.min.js@@@
 			@@@file:src/includes/bootstrap-treeview.min.js@@@

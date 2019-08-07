@@ -18,7 +18,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 
 The IFM uses the following resources:
 * [ACE Editor](https://ace.c9.io)
-* [Bootstrap v3](https://getbootstrap.com)
+* [Bootstrap v4](https://getbootstrap.com)
 * custom icon set generated with [Fontello](http://fontello.com/)
 * [jQuery](https://jquery.com)
 * [Mustache](https://mustache.github.io/)
@@ -37,7 +37,7 @@ The IFM uses the following resources:
   * HTML5 and CSS3 compatible browser
   * activated javascript
 * Server
-  * PHP >= 5.5
+  * PHP >= 7.0
   * extensions
     * bz2
     * curl (for remote upload)

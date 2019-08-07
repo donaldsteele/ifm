@@ -16,7 +16,7 @@ $IFM_SRC_PHP = array(
 );
 
 // output files
-define( "IFM_STANDALONE",    "ifm.php" );
+define( "IFM_STANDALONE",    "build/ifm.php" );
 define( "IFM_STANDALONE_GZ", "build/ifm.min.php" );
 define( "IFM_LIB",           "build/libifm.php" );
 

@@ -462,14 +462,9 @@ function IFM( params ) {
 			}
 		});
 
-		$('#editoroptions').popover({
-			html: true,
-			title: self.i18n.options,
-			content: function() {
-				// see https://github.com/twbs/bootstrap/issues/12571
-				var ihatethisfuckingpopoverworkaround = $('#editoroptions').data('bs.popover');
-				ihatethisfuckingpopoverworkaround.$tip.find( '.popover-content' ).empty();
+		$('#editoroptions').click(function() {
 
+			    var editoroptionsdiv = $('#editoroptionsdiv');
 				var aceSession = self.editor.getSession();
 				var content = self.getNodesFromString(
 					Mustache.render(
@@ -507,13 +502,14 @@ function IFM( params ) {
 							self.editor.getSession().setMode( e.target.value );
 						});
 				});
-				return content;
-			}
+
+				editoroptionsdiv.html(content).toggle();
 		});
 
 		// Start ACE
 		self.editor = ace.edit("content");
 		self.editor.$blockScrolling = 'Infinity';
+		self.editor.setTheme('ace/theme/monokai');
 		self.editor.getSession().setValue(content);
 		self.editor.focus();
 		self.editor.on("change", function() { self.fileChanged = true; });
